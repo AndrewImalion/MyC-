@@ -1,4 +1,5 @@
 //使用while计算阶乘
+//BaronChang，AllRightsReserved
 #include"stdafx.h"
 #include<iostream>
 using namespace std;
