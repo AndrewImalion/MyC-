@@ -1,5 +1,5 @@
 //数据大小显示
-//@BaronChang,铮琪大人，allrightresevered
+//BaronChang,铮琪大人，AllRightsReserved
 
 #include "stdafx.h"
 #include <iostream>
