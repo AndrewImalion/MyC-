@@ -6,13 +6,13 @@
 
 using namespace std;
 
-book::newBook(){
+book::book(){
 	tittle = "unknown";
 	author = "unknown";
 	date = "unknown";
 };
 
-book::newBook(string bookTittle, string bookAuthor, string creditDate){
+book::book(string bookTittle, string bookAuthor, string creditDate){
 	tittle = bookTittle;
 	author = bookAuthor;
 	date = creditDate;
