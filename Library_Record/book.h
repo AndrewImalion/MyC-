@@ -5,8 +5,8 @@
 
 class book{
 public:
-	newBook();
-	newBook(string bookTittle, string bookAuthor, string creditDate);
+	book();
+	book(string bookTittle, string bookAuthor, string creditDate);
 	getBookTittle() const;
 	getBookAuthor() const;
 	getCreditDate() const;
