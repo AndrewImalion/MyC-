@@ -1,4 +1,4 @@
-//¼ÆËãÈı½ÇĞÎÃæ»ı
+//è®¡ç®—ä¸‰è§’å½¢é¢ç§¯
 //@BaronChang,All Rights Reserved
 
 #include "stdafx.h"
@@ -46,13 +46,13 @@ double Triangle::getArea(void)
 {
 	if (isLegal())
 	{
-		cout << "±ß³¤Îª"<<side0<<","<<side1<<","<<side2<<"µÄÈı½ÇĞÎµÄÃæ»ıÊÇ" << Heron(side0, side1, side2) << endl;
+		cout << "è¾¹é•¿ä¸º"<<side0<<","<<side1<<","<<side2<<"çš„ä¸‰è§’å½¢çš„é¢ç§¯æ˜¯" << Heron(side0, side1, side2) << endl;
 		return  Heron(side0, side1, side2);
 	}
 	else
 	{
-		cout << side0 << "," << side1 << "," << side2 << "  ÎŞ·¨¹¹³ÉÈı½ÇĞÎ£¡" << endl;
-		return -1;
+		cout << side0 << "," << side1 << "," << side2 << "  æ— æ³•æ„æˆä¸‰è§’å½¢ï¼" << endl;
+		return 	NULL;
 	}
 }
 
@@ -90,4 +90,4 @@ int _tmain()
 	return 0;
 };
 
-//TODO:ÄÜ¹»ÈÃÓÃ»§Í¨¹ıcin¹¹ÔìÈı½ÇĞÎ
+//TODO:èƒ½å¤Ÿè®©ç”¨æˆ·é€šè¿‡cinæ„é€ ä¸‰è§’å½¢
