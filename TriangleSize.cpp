@@ -85,7 +85,7 @@ int _tmain()
 	trianglo1.getArea();
 	trianglo2.getArea();
 
-	system("pause");
+	
 	return 0;
 };
 
