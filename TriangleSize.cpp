@@ -1,7 +1,6 @@
 //计算三角形面积
 //@BaronChang,All Rights Reserved
 
-#include "stdafx.h"
 #include<iostream>
 #include<cmath>
 
