@@ -1,3 +1,6 @@
 # MyC++
-##C++
+## C++
+
+all rights reserved.
+ @BaronChang
 
