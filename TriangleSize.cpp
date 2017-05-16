@@ -89,4 +89,4 @@ int _tmain()
 	return 0;
 };
 
-//TODO:能够让用户通过cin构造三角形
+
