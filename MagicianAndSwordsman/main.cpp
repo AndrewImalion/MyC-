@@ -170,6 +170,6 @@ int main()
 {
 	cout << "debug" << endl;
 
-	system("pause");
+	
 	return 0;
 };
