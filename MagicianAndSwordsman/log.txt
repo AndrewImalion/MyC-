@@ -1,3 +1,22 @@
 @GreatBaron
 
 aim: learning class
+
+
+May，30-to fix this：
+Magisworder::Magisworder(string name, Weapon item, int mana, int degree, int strgth, int lv)
+{
+	Name = name;
+	weapon = item;
+	swordsmanStrength = strgth;
+	swordsmanLevel = lv;
+	magicianMana = mana;
+	magicianDegree = degree;
+
+	cout << "a new magisworder! His name is " << Name
+		<< ".He takes on a" << weapon.getWPName()
+		<< "\n His strength is:" << swordsmanStrength
+		<< "\n His level is:" << swordsmanLevel 
+		<< "\n His mana is:" << magicianMana
+		<< "\n His degree is:" << magicianDegree << endl;
+}
