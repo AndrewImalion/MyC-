@@ -185,11 +185,10 @@ private:
 
 };
 
-//ToDo: a new class Magisworder
 int main()
 {
 	cout << "debug" << endl;
 
-	
+	system("pause");
 	return 0;
 };
