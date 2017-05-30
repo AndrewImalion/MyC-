@@ -79,6 +79,7 @@ Profession::Profession()
 class Magician:public Profession
 {
 public:
+	Magician();
 	Magician(string name,Weapon item,int mana,int degree);
 	int getMana();
 	int getDegree();
@@ -89,7 +90,7 @@ public:
 		return magicianDegree*magicianMana + (weapon.getWPTpye() == MAGICAL ? 2 : 1)*weapon.getWPPower();
 	};
 
-private:
+protected:
 	int magicianMana;
 	int magicianDegree;
 
@@ -124,6 +125,7 @@ void Magician::setMana(int delt){
 class Swordsman:public Profession
 {
 public:
+	Swordsman();
 	Swordsman(string name, Weapon item, int strgth, int lv);
 	int getStrength();
 	int getLevel();
@@ -134,7 +136,7 @@ public:
 		return swordsmanLevel*swordsmanStrength + (weapon.getWPTpye() == PYSICAL ? 3 : 0)*weapon.getWPPower();
 	};
 
-private:
+protected:
 	int swordsmanStrength;
 	int swordsmanLevel;
 
@@ -163,6 +165,24 @@ void Swordsman::setStrength(int delt){
 };
 void Swordsman::setLevel(int delt){
 	swordsmanLevel += delt;
+};
+
+//ToDo: a new class Magisworder
+
+class Magisworder:public Magician,public Swordsman
+{
+public:
+	Magisworder(string name, Weapon item, int mana, int degree, int strgth, int lv);
+	
+	int getPower()
+	{
+		return swordsmanLevel*swordsmanStrength + magicianDegree*magicianMana + weapon.getWPPower() * 3;
+	};
+
+private:
+	string Name;
+	Weapon weapon;
+
 };
 
 //ToDo: a new class Magisworder
