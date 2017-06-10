@@ -20,3 +20,5 @@ Magisworder::Magisworder(string name, Weapon item, int mana, int degree, int str
 		<< "\n His mana is:" << magicianMana
 		<< "\n His degree is:" << magicianDegree << endl;
 }
+
+lost passion
