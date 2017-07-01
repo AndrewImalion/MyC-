@@ -11,19 +11,21 @@
 #include<fstream>
 #include<string>
 #include<cstdlib>
+#include<cstdio>
+#include<ctime>
 #include"Food.h"
 
 using namespace std;
 
 //=================================================================
 //random int 
-int randbtw(const int &min , const int &max)
+int randbtw(int bot,int top)
 {
-	if (max==0)
-	{
-		cout << "error,bad max" << max << endl;
-	}
-	return (min + rand() % (max-min+1));
+	srand((int)time(0));
+	if (bot < top)
+		return bot + rand() % (top - bot + 1);
+	else
+		throw runtime_error("error: bad random: " + bot + top);
 };
 //=================================================================
 //Food implementation
@@ -36,7 +38,7 @@ Food::Food(string name="unamed",int lowest=0,int highest=0,int location=1)
 };
 void Food::showFoodPrice()
 {
-	cout << this->getFoodName()<< "çš„ä»·æ ¼æ˜¯" << this->lowestPrice << "--" 
+	cout << this->getFoodName()<< "µÄ¼Û¸ñÊÇ" << this->lowestPrice << "--" 
 		<< this->highestPrice
 		<< endl;
 };
@@ -104,7 +106,7 @@ Food lookFood(int loc)
 		break;
 	default:
 	{
-		cout << "æ— æ³•è¯†åˆ«çš„å‘½ä»¤ï¼Œéšä¾¿åƒç‚¹å§" << endl;
+		cout << "ÎÞ·¨Ê¶±ðµÄÃüÁî£¬Ëæ±ã³Ôµã°É" << endl;
 		lookFood(0);
 	};
 		break;
@@ -128,9 +130,9 @@ int main()
 	{
 		system("cls");
 		int compass;
-		cout << "è¯·è¾“å…¥æ¥¼å±‚æ•°" << endl;
+		cout << "ÇëÊäÈëÂ¥²ãÊý" << endl;
 		cin >> compass;
-		cout << "åƒ " << lookFood(compass).getFoodName() << endl;
+		cout << "³Ô " << lookFood(compass).getFoodName() << endl;
 		system("pause");
 	} while (true);
 	
